@@ -16,7 +16,7 @@ consul:
     - "53/udp"
 
 registrator:
-  command:  -ip=<DOCKER HOST IP GOES HERE> consul://consul:8500
+  command:  -ip=10.31.41.100 consul://consul:8500
   image: gliderlabs/registrator:latest
   volumes:
     - "/var/run/docker.sock:/tmp/docker.sock"
